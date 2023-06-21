@@ -1,0 +1,9 @@
+{
+    "project_name": "project_name",
+    "project_repo": "{{ cookiecutter.project_name.lower().replace(' ', '-')",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "__processor_class_name": "{%- for n in cookiecutter.project_name.split() %}{{ n[0].title()+n[1:].lower() }}{% endfor %}",
+    "author_name": "",
+    "description": "A short description of the project.",
+    "python_interpreter": ["python3", "python"]
+}
