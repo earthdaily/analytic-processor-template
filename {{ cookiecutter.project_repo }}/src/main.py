@@ -1,9 +1,11 @@
 import os
 import json
 from api import api
-def main():
 
-    return
+
+app= api.app
+def main():
+    return app
 
 
 if __name__ == '__main__' :

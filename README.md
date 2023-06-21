@@ -176,6 +176,19 @@ To create your repo using this template, perform these steps :
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+
+## Linking your repo to github
+
+Using cookiecutter creates the folders locally, but you may want to version control it. Here are the steps :
+
+ - Create a new repository, without adding any source to it (.gitignore and README.md files will be created by cookiecutter)
+ - go to the created project folder, and run:
+   - `git init`
+   - `git add *`
+   - `git commit -m "first commit"`
+   - (modify first) `git remote add origin <yourorganisationgit>/<repo>.git`
+   - `git push -u origin main`
+   
 ### Customization
 
 You can modify the template according to your liking and needs

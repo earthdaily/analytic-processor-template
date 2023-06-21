@@ -10,7 +10,6 @@ RUN pip cache purge
 
 COPY ./src .
 
-ENTRYPOINT ["hypercorn", "cloudevents_endpoint:app", "-b", "0.0.0.0:80", "--worker-class", "trio"]
 #COPY ./requirements-conda.txt .
 #RUN conda install -c conda-forge --file requirements-conda.txt
 #RUN conda clean --all
@@ -21,3 +20,6 @@ RUN pip cache purge; exit 0
 
 COPY ./src .
 COPY ./setup.py .
+
+ENTRYPOINT ["hypercorn", "main:app", "-b", "0.0.0.0:80", "--worker-class", "trio"]
+
