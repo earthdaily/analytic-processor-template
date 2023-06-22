@@ -134,8 +134,8 @@ To create your repo using this template, perform these steps :
    Or you can call it after cloning the analytic template repo locally : 
 
    ```
-    git clone cookiecutter https://github.com/GEOSYS/analytic-processor-template
-    cookiecutter <local_path_to>/analytic-processor-template
+    git clone https://github.com/GEOSYS/analytic-processor-template
+    cookiecutter analytic-processor-template
    ```
     
 2. You will be prompted for the following informations to initialize the project:
