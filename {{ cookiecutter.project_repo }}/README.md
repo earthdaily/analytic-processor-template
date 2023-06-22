@@ -13,7 +13,7 @@
     <img src="https://earthdailyagro.com/wp-content/uploads/2022/01/Logo.svg" alt="Logo" width="400" height="200">
   </a>
 
-  <h1 align="center">{{ cookiecutter.project_slug }}</h1>
+  <h1 align="center">{{ cookiecutter.project_name }}</h1>
 
   <p align="center">
     Learn how to use &ltgeosys/&gt platform capabilities in your own business workflow! Build your processor and learn how to run them on your platform.
@@ -115,14 +115,14 @@ To set up the project, follow these steps:
 1. Clone the project repository:
 
     ```
-    git clone http://github.com/GEOSYS{{cookiecutter.__processor_class_name}}
+    git clone http://github.com/GEOSYS/{{ cookiecutter.project_repo }}
     ```
 
 
 2. Change the directory:
 
     ```
-    cd {{cookiecutter.__processor_class_name}}
+    cd {{ cookiecutter.project_repo }}
     ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -281,10 +281,10 @@ For any additonal information, please [email us](mailto:sales@earthdailyagro.com
 [contributors-url]: https://github.com/github_username/repo/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=plastic&logo=appveyor
 [forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/impacted-areas-identification/repo.svg?style=plastic&logo=appveyor
+[stars-shield]: https://img.shields.io/github/stars/{{ cookiecutter.project_repo }}/repo.svg?style=plastic&logo=appveyor
 [stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/GEOSYS/impacted-areas-identification/repo.svg?style=social
-[issues-url]: https://github.com/GEOSYS/impacted-areas-identification/issues
+[issues-shield]: https://img.shields.io/github/issues/GEOSYS/{{ cookiecutter.project_repo }}/repo.svg?style=social
+[issues-url]: https://github.com/GEOSYS/{{ cookiecutter.project_repo }}/issues
 [license-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license-url]: https://opensource.org/licenses/MIT
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=social&logo=linkedin
@@ -297,8 +297,8 @@ For any additonal information, please [email us](mailto:sales@earthdailyagro.com
 [language-python-url]: https://pypi.org/ 
 [GitStars-shield]: https://img.shields.io/github/stars/GEOSYS?style=social
 [GitStars-url]: https://img.shields.io/github/stars/GEOSYS?style=social
-[CITest-shield]: https://img.shields.io/github/workflow/status/GEOSYS/impacted-areas-identification/Continous%20Integration
-[CITest-url]: https://img.shields.io/github/workflow/status/GEOSYS/impacted-areas-identification/Continous%20Integration
+[CITest-shield]: https://img.shields.io/github/workflow/status/GEOSYS/{{ cookiecutter.project_repo }}/Continous%20Integration
+[CITest-url]: https://img.shields.io/github/workflow/status/GEOSYS/{{ cookiecutter.project_repo }}/Continous%20Integration
 
 
 
