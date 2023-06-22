@@ -7,28 +7,29 @@
 
 
 <!-- PROJECT LOGO -->
-<br />
-<p align="center">
+<br>
+<div align="center">
   <a href="https://github.com/GEOSYS">
     <img src="https://earthdailyagro.com/wp-content/uploads/2022/01/Logo.svg" alt="Logo" width="400" height="200">
   </a>
+  
+  <h1>Impacted Areas Identification</h1>
 
-  <h1 align="center"> Analytic processor template</h1>
-
-  <p align="center">
-    Learn how to use &lt&geosys/&gt platform capabilities in your own business workflow! Build your processor and learn how to run them on your platform.
-    <br />
+  <p>
+    Learn how to use &lt;geosys/&gt; platform capabilities in your own business workflow! Build your processor and learn how to run them on your platform.
+    <br>
     <a href="https://earthdailyagro.com/"><strong>Who we are</strong></a>
-    <br />
-    <br />
+  </p>
+
+  <p>
     <a href="https://github.com/GEOSYS/GeosysPy/issues">Report Bug</a>
     ·
     <a href="https://github.com/GEOSYS/GeosysPy/issues">Request Feature</a>
   </p>
-</p>
-
-<div align="center">
 </div>
+
+<div align="center"></div>
+
 
 <div align="center">
 
@@ -45,13 +46,12 @@
   <summary>Table of Contents</summary>
   <ol>
 - [About The Project](#about-the-project)
-- [Getting Started](#getting-started)
-  * [Prerequisite](#prerequisite)
-  * [Installation](#installation)
+- [Prerequisite](#prerequisite)
 - [Usage](#usage)
-  * [Run the example inside a Docker container](#run-the-example-inside-a-docker-container)
-  * [Usage with Jupyter Notebook](#usage-with-jupyter-notebook)
+   * [Start using the template](#start-using-the-template)
+   * [Linking your repo to github](#linking-your-repo-to-github)
 - [Project Organization](#project-organization)
+- [Customization](#customization)
 - [Resources](#resources)
 - [Support development](#support-development)
 - [License](#license)
@@ -72,10 +72,7 @@ When using the `cookiecutter` command on this repository, it creates a git repos
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-### Prerequisite
+## Prerequisite
 
 To be able to run this example, you will need to have following tools to be installed
 
@@ -120,7 +117,7 @@ This package has been tested on Python 3.9.7.
 
 ## Usage
 
-### start using the template
+### Start using the template
 
 To create your repo using this template, perform these steps : 
 
@@ -150,6 +147,19 @@ To create your repo using this template, perform these steps :
  - `description` : "A short description of the project.",
  - `python_interpreter` : ["python3", "python"]
 
+### Linking your repo to github
+
+Using cookiecutter creates the folders locally, but you may want to version control it. Here are the steps :
+
+ - Create a new repository, without adding any source to it (.gitignore and README.md files will be created by cookiecutter)
+ - go to the created project folder, and run:
+   - `git init`
+   - `git add *`
+   - `git commit -m "first commit"`
+   - (modify first) `git remote add origin <yourorganisationgit>/<repo>.git`
+   - `git push -u origin main`
+
+
 <!-- PROJECT ORGANIZATION -->
 ## Project Organization
       {{ cookiecutter.project_repo }}
@@ -175,21 +185,8 @@ To create your repo using this template, perform these steps :
        └── tests 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-
-## Linking your repo to github
-
-Using cookiecutter creates the folders locally, but you may want to version control it. Here are the steps :
-
- - Create a new repository, without adding any source to it (.gitignore and README.md files will be created by cookiecutter)
- - go to the created project folder, and run:
-   - `git init`
-   - `git add *`
-   - `git commit -m "first commit"`
-   - (modify first) `git remote add origin <yourorganisationgit>/<repo>.git`
-   - `git push -u origin main`
    
-### Customization
+## Customization
 
 You can modify the template according to your liking and needs
 
@@ -234,7 +231,7 @@ If this project has been useful, that it helped you or your business to save pre
 
 ## License
 
-Distributed under the [GPL 3.0 License](https://www.gnu.org/licenses/gpl-3.0.en.html). 
+Distributed under the [MIT License](https://github.com/GEOSYS/Studies-and-Analysis/blob/main/LICENSE). 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -246,7 +243,7 @@ For any additonal information, please [email us](mailto:sales@earthdailyagro.com
 
 ## Copyrights
 
-© 2022 Geosys Holdings ULC, an Antarctica Capital portfolio company | All Rights Reserved.
+© 2023 Geosys Holdings ULC, an Antarctica Capital portfolio company | All Rights Reserved.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -264,10 +261,10 @@ For any additonal information, please [email us](mailto:sales@earthdailyagro.com
 [contributors-url]: https://github.com/github_username/repo/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=plastic&logo=appveyor
 [forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/analytic-processor-template/repo.svg?style=plastic&logo=appveyor
+[stars-shield]: https://img.shields.io/github/stars/impacted-areas-identification/repo.svg?style=plastic&logo=appveyor
 [stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/GEOSYS/analytic-processor-template/repo.svg?style=social
-[issues-url]: https://github.com/GEOSYS/analytic-processor-template/issues
+[issues-shield]: https://img.shields.io/github/issues/GEOSYS/impacted-areas-identification/repo.svg?style=social
+[issues-url]: https://github.com/GEOSYS/impacted-areas-identification/issues
 [license-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license-url]: https://opensource.org/licenses/MIT
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=social&logo=linkedin
@@ -280,8 +277,8 @@ For any additonal information, please [email us](mailto:sales@earthdailyagro.com
 [language-python-url]: https://pypi.org/ 
 [GitStars-shield]: https://img.shields.io/github/stars/GEOSYS?style=social
 [GitStars-url]: https://img.shields.io/github/stars/GEOSYS?style=social
-[CITest-shield]: https://img.shields.io/github/workflow/status/GEOSYS/analytic-processor-template/Continous%20Integration
-[CITest-url]: https://img.shields.io/github/workflow/status/GEOSYS/analytic-processor-template/Continous%20Integration
+[CITest-shield]: https://img.shields.io/github/workflow/status/GEOSYS/impacted-areas-identification/Continous%20Integration
+[CITest-url]: https://img.shields.io/github/workflow/status/GEOSYS/impacted-areas-identification/Continous%20Integration
 
 
 
