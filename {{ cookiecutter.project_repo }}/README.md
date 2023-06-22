@@ -196,16 +196,20 @@ To set up and run the project using Docker, follow these steps:
     http://127.0.0.1:8082/docs
     ```
 
+   This URL will open the Swagger UI documentation, click on the "Try it out" button for the POST endpoint and  enter the request body
+   
+   Body Example for {{ cookiecutter.project_slug }} endpoint:
+   
+   ```json
+   
+   ```
 
-This URL will open the Swagger UI documentation, click on the "Try it out" button for the POST endpoint and  enter the request body
+4. Closing the Docker container:
 
-
-Body Example for {{ cookiecutter.project_slug }} endpoint:
-
-
-```json
-
-```
+    To delete the container when it is not needed anymore run : 
+    ```
+    docker stop demo
+    ```
 
 <!-- PROJECT ORGANIZATION -->
 ## Project Organization
