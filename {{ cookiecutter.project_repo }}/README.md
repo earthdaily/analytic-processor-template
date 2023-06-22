@@ -43,7 +43,7 @@
 <!-- TABLE OF CONTENTS -->
 <details open>
   <summary>Table of Contents</summary>
-  <ol>
+
 - [About The Project](#about-the-project)
 - [Getting Started](#getting-started)
   * [Prerequisite](#prerequisite)
@@ -57,7 +57,7 @@
 - [License](#license)
 - [Contact](#contact)
 - [Copyrights](#copyrights)
-  </ol>
+
 </details>
 
 <!-- ABOUT THE PROJECT -->
