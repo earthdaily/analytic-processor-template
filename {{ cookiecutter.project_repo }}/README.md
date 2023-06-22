@@ -30,6 +30,16 @@
 <div align="center">
 </div>
 
+<div align="center">
+  
+[![LinkedIn][linkedin-shield]][linkedin-url]
+[![Twitter][twitter-shield]][twitter-url]
+[![Youtube][youtube-shield]][youtube-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+
+</div>
+
 <!-- TABLE OF CONTENTS -->
 <details open>
   <summary>Table of Contents</summary>
@@ -153,7 +163,7 @@ To use the project with Jupyter Notebook, follow these steps:
     ```
     python -m ipykernel install --user --name demo --display-name demo
     ```
-5. Open the example notebook ({{cookiecutter.project_slug}}.ipynb) by clicking on it.
+5. Open jupyter and then the example notebook ({{cookiecutter.project_slug}}.ipynb) by clicking on it.
 
 
 
@@ -229,6 +239,7 @@ Body Example for {{ cookiecutter.project_slug }} endpoint:
 The following links will provide access to more information:
 - [EarthDaily agro developer portal  ](https://developer.geosys.com/)
 - [Pypi package](https://pypi.org/project/geosyspy/)
+- [Analytic processor template](https://github.com/GEOSYS/Analytic-processor-template)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -241,7 +252,7 @@ If this project has been useful, that it helped you or your business to save pre
 
 ## License
 
-Distributed under the [GPL 3.0 License](https://www.gnu.org/licenses/gpl-3.0.en.html). 
+Distributed under the [MIT License](https://github.com/GEOSYS/Studies-and-Analysis/blob/main/LICENSE).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -253,7 +264,7 @@ For any additonal information, please [email us](mailto:sales@earthdailyagro.com
 
 ## Copyrights
 
-© 2022 Geosys Holdings ULC, an Antarctica Capital portfolio company | All Rights Reserved.
+© 2023 Geosys Holdings ULC, an Antarctica Capital portfolio company | All Rights Reserved.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -262,15 +273,17 @@ For any additonal information, please [email us](mailto:sales@earthdailyagro.com
 <!-- List of available shields https://shields.io/category/license -->
 <!-- List of available shields https://simpleicons.org/ -->
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=social
+[NETcore-shield]: https://img.shields.io/badge/.NET%20Core-6.0-green
+[NETcore-url]: https://github.com/dotnet/core
 [contributors-url]: https://github.com/github_username/repo/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=plastic&logo=appveyor
 [forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/qgis-plugin/repo.svg?style=plastic&logo=appveyor
+[stars-shield]: https://img.shields.io/github/stars/impacted-areas-identification/repo.svg?style=plastic&logo=appveyor
 [stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/GEOSYS/GeosysPy/repo.svg?style=social
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/GEOSYS/qgis-plugin
-[license-url]: https://www.gnu.org/licenses/gpl-3.0.en.html
+[issues-shield]: https://img.shields.io/github/issues/GEOSYS/impacted-areas-identification/repo.svg?style=social
+[issues-url]: https://github.com/GEOSYS/impacted-areas-identification/issues
+[license-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
+[license-url]: https://opensource.org/licenses/MIT
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=social&logo=linkedin
 [linkedin-url]: https://www.linkedin.com/company/earthdailyagro/mycompany/
 [twitter-shield]: https://img.shields.io/twitter/follow/EarthDailyAgro?style=social
@@ -281,8 +294,9 @@ For any additonal information, please [email us](mailto:sales@earthdailyagro.com
 [language-python-url]: https://pypi.org/ 
 [GitStars-shield]: https://img.shields.io/github/stars/GEOSYS?style=social
 [GitStars-url]: https://img.shields.io/github/stars/GEOSYS?style=social
-[CITest-shield]: https://img.shields.io/github/workflow/status/GEOSYS/GeosysPy/Continous%20Integration
-[CITest-url]: https://img.shields.io/github/workflow/status/GEOSYS/GeosysPy/Continous%20Integration
+[CITest-shield]: https://img.shields.io/github/workflow/status/GEOSYS/impacted-areas-identification/Continous%20Integration
+[CITest-url]: https://img.shields.io/github/workflow/status/GEOSYS/impacted-areas-identification/Continous%20Integration
+
 
 
 

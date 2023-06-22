@@ -13,7 +13,7 @@ from typing import Dict
 
 app = FastAPI(
     docs_url=None,
-    title="{{cookiecutter.project_repo}}"+"-api",
+    title="{{cookiecutter.project_name}}"+" Api",
     description= "{{cookiecutter.description}}"
     )
 app.mount("/static", StaticFiles(directory="./api/files"), name="static")
@@ -22,6 +22,6 @@ app.mount("/static", StaticFiles(directory="./api/files"), name="static")
 async def swagger_ui_html():
     return get_swagger_ui_html(
         openapi_url="/openapi.json",
-        title="{{cookiecutter.project_name}}"+"Api",
+        title="{{cookiecutter.project_name}}"+" Api",
         swagger_favicon_url="/static/favicon.svg"
     )
