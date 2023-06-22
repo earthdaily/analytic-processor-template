@@ -13,7 +13,7 @@
     <img src="https://earthdailyagro.com/wp-content/uploads/2022/01/Logo.svg" alt="Logo" width="400" height="200">
   </a>
   
-  <h1>Impacted Areas Identification</h1>
+  <h1>Analytic Processor Template</h1>
 
   <p>
     Learn how to use &lt;geosys/&gt; platform capabilities in your own business workflow! Build your processor and learn how to run them on your platform.
@@ -44,7 +44,7 @@
 <!-- TABLE OF CONTENTS -->
 <details open>
   <summary>Table of Contents</summary>
-  <ol>
+
 - [About The Project](#about-the-project)
 - [Prerequisite](#prerequisite)
 - [Usage](#usage)
@@ -57,7 +57,7 @@
 - [License](#license)
 - [Contact](#contact)
 - [Copyrights](#copyrights)
-  </ol>
+
 </details>
 
 <!-- ABOUT THE PROJECT -->
@@ -65,7 +65,7 @@
 
 <p> The aim of this project is to help our customers valuing &ltgeosys/&gt platform capabilities to build their own analytic of interest. </p>
 
-This repository contains template files based on the cookiecutter system, which allows to rapidly create basic folder structure for data science projects at EarthDaily Agro.
+This repository contains template files based on the cookiecutter system, which allows to rapidly create basic folder structure for data science projects.
 
 When using the `cookiecutter` command on this repository, it creates a git repository, folders and files structure populated with some of the information provided by the user.
 
