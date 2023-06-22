@@ -16,7 +16,7 @@
   <h1 align="center">{{ cookiecutter.project_slug }}</h1>
 
   <p align="center">
-    Learn how to use &lt&geosys/&gt platform capabilities in your own business workflow! Build your processor and learn how to run them on your platform.
+    Learn how to use &ltgeosys/&gt platform capabilities in your own business workflow! Build your processor and learn how to run them on your platform.
     <br />
     <a href="https://earthdailyagro.com/"><strong>Who we are</strong></a>
     <br />
@@ -148,7 +148,6 @@ To use the project with Jupyter Notebook, follow these steps:
     
     ```
     conda activate demo
-
     ```
    
 3. Install the project dependencies. You can do this by running the following command in your terminal:
