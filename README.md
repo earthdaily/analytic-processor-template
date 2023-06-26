@@ -12,7 +12,7 @@
   <a href="https://github.com/GEOSYS">
     <img src="https://earthdailyagro.com/wp-content/uploads/2022/01/Logo.svg" alt="Logo" width="400" height="200">
   </a>
-  
+
   <h1>Analytic Processor Template</h1>
 
   <p>
@@ -63,7 +63,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<p> The aim of this project is to help our customers valuing &ltgeosys/&gt platform capabilities to build their own analytic of interest. </p>
+<p> The aim of this project is to help our customers valuing &ltgeosys/&gt platform capabilities to build their own analytic of interest.  </p>
 
 This repository contains template files based on the cookiecutter system, which allows to rapidly create basic folder structure for data science projects.
 
@@ -86,7 +86,7 @@ To be able to run this example, you will need to have following tools to be inst
 
     Please install Conda on your computer. You can download and install it by following the instructions provided on the [official Conda website](https://conda.io/projects/conda/en/latest/user-guide/install/index.html)
 
-3. Install Python 
+3. Install Python
     Python 3.7+
 
 4. Install cookiecutter
@@ -119,25 +119,25 @@ This package has been tested on Python 3.9.7.
 
 ### Start using the template
 
-To create your repo using this template, perform these steps : 
+To create your repo using this template, perform these steps :
 
 
 1. Call the template:
 
-    You can directly call this template from github using the following command : 
+    You can directly call this template from github using the following command :
 
-    
+
    ```
      cookiecutter https://github.com/GEOSYS/analytic-processor-template
    ```
 
-   Or you can call it after cloning the analytic template repo locally : 
+   Or you can call it after cloning the analytic template repo locally :
 
    ```
     git clone https://github.com/GEOSYS/analytic-processor-template
     cookiecutter analytic-processor-template
    ```
-    
+
 2. You will be prompted for the following informations to initialize the project:
 
  - `project_name` : Readable name of the project or technology, e.g. Machine Learning based Time Series Classification
@@ -175,17 +175,17 @@ Using cookiecutter creates the folders locally, but you may want to version cont
        │
        ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
        ├───src                <- Source code for use in tis project.
-       │   ├───main.py 
+       │   ├───main.py
        │   ├───api
        │   │   ├── __init__.py
        │   │   └── api.py
        │   └───{{ cookiecutter.project_slug }}
        │       ├── __init__.py
        │       └── {{ cookiecutter.project_slug }}.py
-       └── tests 
+       └── tests
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-   
+
 ## Customization
 
 You can modify the template according to your liking and needs
@@ -199,7 +199,7 @@ You can modify the template according to your liking and needs
 
 2. Change the cookiecutter.json:
 
-      You can enter any template parameter you want to use. 
+      You can enter any template parameter you want to use.
 
 
 3. Directly add or delete folders and files.
@@ -215,7 +215,7 @@ You can modify the template according to your liking and needs
 
 
 <!-- RESOURCES -->
-## Resources 
+## Resources
 The following links will provide access to more information:
 - [EarthDaily agro developer portal  ](https://developer.geosys.com/)
 - [Pypi package](https://pypi.org/project/geosyspy/)
@@ -231,7 +231,7 @@ If this project has been useful, that it helped you or your business to save pre
 
 ## License
 
-Distributed under the [MIT License](https://github.com/GEOSYS/Studies-and-Analysis/blob/main/LICENSE). 
+Distributed under the [MIT License](https://github.com/GEOSYS/Studies-and-Analysis/blob/main/LICENSE).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -274,14 +274,8 @@ For any additonal information, please [email us](mailto:sales@earthdailyagro.com
 [youtube-shield]: https://img.shields.io/youtube/channel/views/UCy4X-hM2xRK3oyC_xYKSG_g?style=social
 [youtube-url]: https://img.shields.io/youtube/channel/views/UCy4X-hM2xRK3oyC_xYKSG_g?style=social
 [language-python-shiedl]: https://img.shields.io/badge/python-3.9-green?logo=python
-[language-python-url]: https://pypi.org/ 
+[language-python-url]: https://pypi.org/
 [GitStars-shield]: https://img.shields.io/github/stars/GEOSYS?style=social
 [GitStars-url]: https://img.shields.io/github/stars/GEOSYS?style=social
 [CITest-shield]: https://img.shields.io/github/workflow/status/GEOSYS/impacted-areas-identification/Continous%20Integration
 [CITest-url]: https://img.shields.io/github/workflow/status/GEOSYS/impacted-areas-identification/Continous%20Integration
-
-
-
-
-
-
