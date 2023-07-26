@@ -138,7 +138,7 @@ To create your repo using this template, perform these steps :
     cookiecutter analytic-processor-template
    ```
 
-2. You will be prompted for the following informations to initialize the project:
+2. You will be prompted for the following information to initialize the project:
 
  - `project_name` : Readable name of the project or technology, e.g. Machine Learning based Time Series Classification
  - `project_repo` : the name of the created repository of the project, default to e.g. machine-learning-based-time-series-classification
@@ -146,6 +146,7 @@ To create your repo using this template, perform these steps :
  - `author_name` : the name of the authors
  - `description` : "A short description of the project.",
  - `python_interpreter` : ["python3", "python"]
+ - `cloud_storage`: ["none","aws", "azure", "both"]
 
 ### Linking your repo to github
 
