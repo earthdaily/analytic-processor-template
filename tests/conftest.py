@@ -8,10 +8,13 @@ CCDS_ROOT = Path(__file__).parents[1].resolve()
 
 args = {
         'project_name': 'DrivenData',
-        'author_name': 'DrivenData',
-        'python_interpreter': 'python'
+        'project_repo': 'DrivenData',
+        'project_slug': 'DrivenData',
+        'author_name': '',
+        'python_interpreter': 'python3',
+        "description": "A short description of the project.",
+        "cloud_storage":"none"
         }
-
 
 def system_check(basename):
     platform = sys.platform
@@ -20,7 +23,7 @@ def system_check(basename):
     return basename
 
 
-@pytest.fixture(scope='class', params=[{}, args])
+@pytest.fixture(scope='class', params=[{},args])
 def default_baked_project(tmpdir_factory, request):
     temp = tmpdir_factory.mktemp('data-project')
     out_dir = Path(temp).resolve()
@@ -33,7 +36,7 @@ def default_baked_project(tmpdir_factory, request):
         output_dir=out_dir
     )
 
-    pn = pytest.param.get('project_name') or 'project_name'
+    pn = pytest.param.get('project_name') or 'project-name'
     
     # project name gets converted to lower case on Linux but not Mac
     pn = system_check(pn)
