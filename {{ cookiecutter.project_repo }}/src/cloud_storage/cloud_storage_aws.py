@@ -2,6 +2,7 @@ import logging
 import os
 import boto3
 
+
 def _get_s3_client():
     access_key: str = os.getenv('AWS_ACCESS_KEY_ID')
     secret_key: str = os.getenv('AWS_SECRET_ACCESS_KEY')
@@ -70,7 +71,23 @@ def write_folder_to_aws_s3(local_folder_path, bucket_name=None):
             return True
         except Exception as exc:
             logging.error(f"Error while uploading folder to AWS S3: {str(exc)}")
-            print("AWS ERROR ---> "+ str(exc))
+            print("AWS ERROR ---> " + str(exc))
             return False
     else:
         return False
+
+
+def get_s3_uri_path(local_path):
+    """
+       get the s3 path of the uploaded element (file or folder)
+
+       Args:
+           - local_path: The local path of the uploaded folder/file  on s3
+
+       Returns:
+           the s3 uri of the uploaded folder/file
+    """
+    s3_key = os.path.basename(local_path)
+    bucket_name = os.getenv('AWS_BUCKET_NAME')
+    s3_uri = f"s3://{bucket_name}/{s3_key}"
+    return s3_uri

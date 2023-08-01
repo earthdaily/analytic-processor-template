@@ -103,3 +103,20 @@ def upload_directory_to_azure_blob_storage(local_directory_path):
     else:
         logging.error("Please enter valid access information to Azure blob storage in .env file")
         return False
+
+
+def get_azure_blob_url_path(local_path):
+    """
+       get the azure blob path of the uploaded element (file or folder)
+
+       Args:
+           - local_path: The local path of the uploaded folder/file  on s3
+
+       Returns:
+           the azure blob url of the uploaded folder/file
+    """
+    azure_blob_key = os.path.basename(local_path)
+    account_name, blob_container_name, sas_credential = _get_access_info()
+
+    blob_url = f"https://{account_name}.blob.core.windows.net/{blob_container_name}/{azure_blob_key}"
+    return blob_url
