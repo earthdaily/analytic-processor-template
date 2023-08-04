@@ -71,7 +71,6 @@ def write_folder_to_aws_s3(local_folder_path, bucket_name=None):
             return True
         except Exception as exc:
             logging.error(f"Error while uploading folder to AWS S3: {str(exc)}")
-            print("AWS ERROR ---> " + str(exc))
             return False
     else:
         return False

@@ -229,6 +229,19 @@ To set up and run the project using Docker, follow these steps:
     │   ├───api
     │   │   ├── __init__.py
     │   │   └── api.py
+{%- if cookiecutter.cloud_storage == 'aws' or cookiecutter.cloud_storage == 'both' or cookiecutter.cloud_storage == 'azure' %}
+    │   ├───cloud_storage
+{%- endif %}
+{%- if cookiecutter.cloud_storage == 'both' %}
+    │   │   ├── cloud_storage_aws.py
+    │   │   └── cloud_storage_azure.py
+{%- endif %}
+{%- if cookiecutter.cloud_storage == 'aws' %}
+    │   │   └── cloud_storage_aws.py
+{%- endif %}
+{%- if cookiecutter.cloud_storage == 'azure' %}
+    │   │   └── cloud_storage_azure.py
+{%- endif %}
     │   └───{{ cookiecutter.project_slug }}
     │       ├── __init__.py
     │       └── {{ cookiecutter.project_slug }}.py

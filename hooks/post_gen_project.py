@@ -39,6 +39,7 @@ def execute(*args, supress_exception=False, cwd=None):
     finally:
         os.chdir(cur_dir)
 
+
 def generate_env_file_for_cloud_storage (configure_aws = False, configure_azure = False ):
     file = open(".env", "w")
     if configure_aws:
@@ -51,6 +52,7 @@ def generate_env_file_for_cloud_storage (configure_aws = False, configure_azure 
         file.write("AZURE_BLOB_CONTAINER_NAME =\n")
         file.write("AZURE_SAS_CREDENTIAL =\n")
     file.close()
+
 
 def init_git():
     # workaround for issue #1
