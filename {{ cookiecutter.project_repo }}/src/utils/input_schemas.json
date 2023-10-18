@@ -1,0 +1,31 @@
+{
+    "type": "object",
+    "properties": {
+        "parameters": {
+            "type": "object",
+            "properties": {
+              "start_date": {"type": "string"},
+              "end_date": {"type": "string"},
+              "country_code":{"type": "string"},
+              "season":{
+                  "season":{
+                  "season_duration":"integer",
+                  "season_start_day":"integer",
+                  "season_start_month":"integer"}},
+              "historical": "boolean"
+            }
+        },
+        "data": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {"type": "string"},
+                    "crop": {"type": "string"},
+                    "year": {"type": "integer"},
+                    "feature": {"type": "string"}
+                }
+            }
+        }
+    }
+}

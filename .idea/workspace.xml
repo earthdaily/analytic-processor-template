@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ad232502-8264-4f72-9928-786d856e9770" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/{{ cookiecutter.project_repo }}/src/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/{{ cookiecutter.project_repo }}/src/data/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/{{ cookiecutter.project_repo }}/src/data/dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/{{ cookiecutter.project_repo }}/src/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/{{ cookiecutter.project_repo }}/src/models/model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/{{ cookiecutter.project_repo }}/src/utils/input_schemas.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hooks/post_gen_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/post_gen_project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hooks/pre_gen_project.py" beforeDir="false" afterPath="$PROJECT_DIR$/hooks/pre_gen_project.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/{{ cookiecutter.project_repo }}/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/{{ cookiecutter.project_repo }}/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/{{ cookiecutter.project_repo }}/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/{{ cookiecutter.project_repo }}/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/{{ cookiecutter.project_repo }}/src/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/{{ cookiecutter.project_repo }}/src/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/{{ cookiecutter.project_repo }}/src/{{ cookiecutter.project_slug }}/processor.py" beforeDir="false" afterPath="$PROJECT_DIR$/{{ cookiecutter.project_repo }}/src/{{ cookiecutter.project_slug }}/processor.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="TaskManager">
+    <servers />
+  </component>
+</project>
