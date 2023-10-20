@@ -26,7 +26,8 @@ RUN pip install -r requirements.txt
 RUN pip cache purge; exit 0
 
 COPY ./src .
-COPY ./setup.py .
+#COPY .env .
+#COPY ./setup.py .
 
 #ENTRYPOINT ["hypercorn", "api/api:app", "-b", "0.0.0.0:80", "--worker-class", "trio"]
 

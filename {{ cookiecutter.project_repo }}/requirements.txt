@@ -16,6 +16,7 @@ xarray
 pyproj
 matplotlib
 fastapi
+jsonschema
 hypercorn[trio]==0.14.3
 {% if cookiecutter.python_interpreter != 'python3' %}
 

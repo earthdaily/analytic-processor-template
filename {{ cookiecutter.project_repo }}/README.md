@@ -178,21 +178,28 @@ To use the project with Jupyter Notebook, follow these steps:
 To set up and run the project using Docker, follow these steps:
 
 1. Build the Docker image locally:
-    
+    Processor 
     ```
-    docker build --tag demo .
+    docker build --build-arg RUN_MODE=CLI --tag template2 .
     ```
-
+    Processor with API
+    ```
+    docker build --build-arg RUN_MODE=API --tag template2 .
+    ```
 2. Run the Docker container:
-
+    Processor
     ```
-    docker run -d --name demo -p 8082:80 demo
+     docker run -e RUN_MODE_ENV=CLI -d --name template_container -p 8081:80 template2 
+    ```
+    Processor with API
+    ```
+     docker run -e RUN_MODE_ENV=API -d --name template_container -p 8081:80 template2 
     ```
 
 3. Access the API by opening a web browser and navigating to the following URL:
     
     ```
-    http://127.0.0.1:8082/docs
+    http://127.0.0.1:8081/docs
     ```
 
    This URL will open the Swagger UI documentation, click on the "Try it out" button for the POST endpoint and  enter the request body

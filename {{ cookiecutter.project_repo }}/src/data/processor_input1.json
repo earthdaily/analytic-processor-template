@@ -1,0 +1,27 @@
+{
+  "parameters": {
+    "start_date": "2022-01-01",
+    "end_date": "2022-12-31",
+    "country_code": "US",
+    "season": {
+      "season_duration": 90,
+      "season_start_day": 1,
+      "season_start_month": 3
+    },
+    "historical": true
+  },
+  "data": [
+    {
+      "id": "1",
+      "crop": "Corn",
+      "year": 2021,
+      "feature": "Yield"
+    },
+    {
+      "id": "2",
+      "crop": "Wheat",
+      "year": 2020,
+      "feature": "POLYGON()"
+    }
+  ]
+}
