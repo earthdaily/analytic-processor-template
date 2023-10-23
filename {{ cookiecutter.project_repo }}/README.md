@@ -178,20 +178,23 @@ To use the project with Jupyter Notebook, follow these steps:
 To set up and run the project using Docker, follow these steps:
 
 1. Build the Docker image locally:
-    Processor 
     ```
-    docker build --build-arg RUN_MODE=CLI --tag template2 .
-    ```
-    Processor with API
-    ```
-    docker build --build-arg RUN_MODE=API --tag template2 .
+    docker build -t template2 .
     ```
 2. Run the Docker container:
-    Processor
+
+    - Processor Mode
+
     ```
-     docker run -e RUN_MODE_ENV=CLI -d --name template_container -p 8081:80 template2 
+     docker run -d --name template_container template2 
     ```
-    Processor with API
+    If you want to provide a specific input path, include the --input_path argument followed by the path to the data. For example:
+    ```
+     docker run -d --name template_container template2 --input_path data/processor_input_example.json
+    ```
+
+    - Processor with API Mode
+
     ```
      docker run -e RUN_MODE_ENV=API -d --name template_container -p 8081:80 template2 
     ```
