@@ -50,18 +50,6 @@ def execute(*args, supress_exception=False, cwd=None):
         os.chdir(cur_dir)
 
 
-def generate_env_file_for_cloud_storage (configure_aws = False, configure_azure = False ):
-    file = open(".env", "w")
-    if configure_aws:
-        file.write("AWS_ACCESS_KEY_ID =\n")
-        file.write("AWS_SECRET_ACCESS_KEY =\n")
-        file.write("AWS_BUCKET_NAME =\n")
-        file.write("\n")
-    if configure_azure:
-        file.write("AZURE_ACCOUNT_NAME =\n")
-        file.write("AZURE_BLOB_CONTAINER_NAME =\n")
-        file.write("AZURE_SAS_CREDENTIAL =\n")
-    file.close()
 
 
 def init_git():
@@ -89,48 +77,6 @@ if __name__ == '__main__':
 
     try:
         init_git()
-
-        # # remove not used cloud storage client(s)
-        # if '{{cookiecutter.cloud_storage}}' == 'aws':
-        #     remove_file(os.path.join('src', 'cloud_storage', 'cloud_storage_azure.py'))
-        #     generate_env_file_for_cloud_storage(configure_aws=True, configure_azure=False)
-        # elif '{{cookiecutter.cloud_storage}}' == 'azure':
-        #     remove_file(os.path.join('src', 'cloud_storage', 'cloud_storage_aws.py'))
-        #     generate_env_file_for_cloud_storage(configure_aws=False, configure_azure=True)
-        # elif '{{cookiecutter.cloud_storage}}' == 'both':
-        #     generate_env_file_for_cloud_storage(configure_aws=True, configure_azure=True)
-        # else:
-        #     remove_dir(os.path.join('src', 'cloud_storage'))
-        #     if os.path.exists('.env'):
-        #         remove_file('.env')
-
-        cloud_storage_selection = '{{cookiecutter.cloud_storage}}'
-        cloud_storage_path = 'src/cloud_storage'
-
-        aws_file_path = os.path.join(cloud_storage_path, 'cloud_storage_aws.py')
-        azure_file_path = os.path.join(cloud_storage_path, 'cloud_storage_azure.py')
-
-        if cloud_storage_selection == 'aws':
-            create_if_not_exists(aws_file_path, is_file=True)
-            remove_file(azure_file_path)
-            generate_env_file_for_cloud_storage(configure_aws=True, configure_azure=False)
-
-        elif cloud_storage_selection == 'azure':
-            create_if_not_exists(azure_file_path, is_file=True)
-            remove_file(aws_file_path)
-            generate_env_file_for_cloud_storage(configure_aws=False, configure_azure=True)
-
-        elif cloud_storage_selection == 'both':
-            create_if_not_exists(aws_file_path, is_file=True)
-            create_if_not_exists(azure_file_path, is_file=True)
-            generate_env_file_for_cloud_storage(configure_aws=True, configure_azure=True)
-
-        else:
-            remove_file(aws_file_path)
-            remove_file(azure_file_path)
-            remove_dir(cloud_storage_path)
-            if os.path.exists('.env'):
-                remove_file('.env')
 
     except Exception as e:
         print(e)

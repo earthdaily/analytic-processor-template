@@ -18,18 +18,3 @@ matplotlib
 fastapi
 jsonschema
 hypercorn[trio]==0.14.3
-{% if cookiecutter.python_interpreter != 'python3' %}
-
-# backwards compatibility
-pathlib2
-{% endif %}
-
-{% if cookiecutter.cloud_storage == 'aws' or cookiecutter.cloud_storage == 'both' %}
-# aws
-boto3
-{% endif %}
-
-{% if cookiecutter.cloud_storage == 'azure' or cookiecutter.cloud_storage == 'both' %}
-# azure
-azure-storage-blob
-{% endif %}

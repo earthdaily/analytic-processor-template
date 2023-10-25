@@ -145,7 +145,6 @@ To create your repo using this template, perform these steps :
  - `project_slug` : "slug" of the project, default to e.g. machine_learning_based_time_series_classification
  - `author_name` : the name of the authors
  - `description` : "A short description of the project.",
- - `python_interpreter` : ["python3", "python"]
  - `cloud_storage`: ["none","aws", "azure", "both"]
 
 ### Linking your repo to github

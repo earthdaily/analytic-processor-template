@@ -9,7 +9,6 @@ from dotenv import load_dotenv
 from geosyspy.geosys import Region,Env
 import json
 from {{cookiecutter.project_slug}}.processor import {{cookiecutter.__processor_class_name}}
-from typing import Dict
 
 app = FastAPI(
     docs_url=None,

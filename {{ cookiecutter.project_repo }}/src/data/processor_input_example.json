@@ -15,7 +15,7 @@
       "id": "1",
       "crop": "Corn",
       "year": 2021,
-      "feature": "Yield"
+      "feature": "POLYGON()"
     },
     {
       "id": "2",

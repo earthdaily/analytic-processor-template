@@ -18,4 +18,4 @@ class ContextFilter:
     def filter(self, record):
         pass
 
-logger = get_logger('analytics_processors')
+logger = get_logger('processors')

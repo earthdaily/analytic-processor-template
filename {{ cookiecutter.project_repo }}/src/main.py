@@ -1,23 +1,22 @@
 import os
-import json
 import argparse
-from utils.file_utils import load_input_data_from_json
+from utils.file_utils import validate_input_model
+from dotenv import load_dotenv
 
 from {{ cookiecutter.project_slug }}.processor import {{cookiecutter.__processor_class_name}}
 def main(input_path=None):
+    load_dotenv()
     environment = os.getenv('APP_ENVIRONMENT', 'local')
+    INPUT_JSON_PATH = os.getenv('INPUT_JSON_PATH')
 
     if environment == 'local':
-
-        if input_path:
-            input_data = load_input_data_from_json(input_path)
-        else:
-            input_data = load_input_data_from_json('data/processor_input_example.json')
+        input_data = validate_input_model(INPUT_JSON_PATH)
 
     elif environment in ['integration', 'validation', 'production']:
         if not input_path:
             raise ValueError(f"No input path provided in the '{environment}' environment.")
-        input_data = load_input_data_from_json(input_path)
+        # input_data = load_input_data(input_path)
+        input_data = validate_input_model(input_path)
     else:
         raise ValueError(f'Unrecognized environment: {environment}')
 

@@ -11,9 +11,7 @@ args = {
         'project_repo': 'DrivenData',
         'project_slug': 'DrivenData',
         'author_name': '',
-        'python_interpreter': 'python3',
-        "description": "A short description of the project.",
-        "cloud_storage":"none"
+        "description": "A short description of the project."
         }
 
 def system_check(basename):

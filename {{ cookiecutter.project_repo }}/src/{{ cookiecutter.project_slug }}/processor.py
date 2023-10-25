@@ -1,33 +1,38 @@
 
 from jsonschema import validate, ValidationError
-from utils.file_utils import load_input_schema
+from schemas.output_schema import ProcessOutput,Metadata
+import time
+from datetime import datetime
 
 class {{cookiecutter.__processor_class_name}}():
 
     def __init__(self, input_data):
         self.input_data = input_data
-        self.schema = load_input_schema()
-        self.validate_input()  # If validation fails, an exception will be raised immediately.
-    def validate_input(self):
-        """Validate the input data against the input schema."""
-        try:
-            validate(instance=self.input_data, schema=self.schema)
-        except ValidationError as e:
-            print(f"Input validation error: {e.message}")
-            raise
 
 
     def prepare_data(self):
-        ### PRE PROCCESSING
-        print("data_prepareed")
+        print("data_prepared")
 
 
     def predict(self, input_data):
-        print("predicted")
-        return "OK"
+        print("Output predicted")
+        return "success"
 
     def trigger(self):
-        print("triggered")
+        start_time = time.time()
+        print("Processor triggered")
         self.prepare_data()
         result = self.predict(self.input_data)
-        return result
+        end_time = time.time()
+        duration_seconds = end_time - start_time
+        output = ProcessOutput(
+            status=result,
+            datacube_url="http://geosysp3.blob.core.windows.net/analytic_datacube.zarr",
+            metadata=Metadata(
+                generated_timestamp=datetime.utcfromtimestamp(end_time).isoformat() + "Z" ,
+                duration_seconds=duration_seconds,
+                datacube_format="zarr"
+            )
+        )
+        print("Processor output:", output)
+        return output
