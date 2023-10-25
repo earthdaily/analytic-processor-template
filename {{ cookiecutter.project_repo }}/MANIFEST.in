@@ -1,0 +1,3 @@
+include src/schemas/*.json
+recursive-include src *.py
+prune src/api

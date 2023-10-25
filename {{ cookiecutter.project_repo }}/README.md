@@ -229,7 +229,8 @@ To set up and run the project using Docker, follow these steps:
     ├── environment.yml    <- The conda requirements file for reproducing the analysis environment, e.g.
     │                         generated with `conda env export > environment.yml`, or manually
     │
-    ├── setup.py           <- makes project pip installable (pip install -e .) so src can be imported
+    ├── pyproject.toml     <- Makes project pip installable (pip install -e .) so src can be imported
+    ├── MANIFEST.in        <- Used to include/exclude files for package genration. 
     ├───src                <- Source code for use in tis project.
     │   ├───main.py 
     │   ├───api
