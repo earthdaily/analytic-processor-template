@@ -52,6 +52,7 @@
    * [Linking your repo to github](#linking-your-repo-to-github)
 - [Project Organization](#project-organization)
 - [Customization](#customization)
+- [Template in action](#template-in-action)
 - [Resources](#resources)
 - [Support development](#support-development)
 - [License](#license)
@@ -213,8 +214,22 @@ You can modify the template according to your liking and needs
 
 
 
+<!-- TEMPLATE IN ACTION -->
+## Template in action
+Based on this template, we also created several examples of processors showcasing how to create tailored analytics based imagery, weather data on small geometries or regional entiies.
 
+Here is the list of examples:
 
+- **Imput pipeline**:
+   - [Reflectance datacube processor](https://github.com/GEOSYS/reflectance-datacube-processor) showcasing how to extract data from EarthData Store with premium cloud mask and publish a datacube on cloud storage.
+   - [Analytic datacube processor](https://github.com/GEOSYS/analytics-datacube-processor) showcasing how to extract analytics (mostly vegetation indexes here), package them as a N dimension object that will be persisted on cloud storage.
+
+- **Analytic generation**
+  - [Sub entity analysis processor](https://github.com/GEOSYS/sub-entity-analysis-processor) showcasing how the impact of an inputs or a practices applied on a sub area of a field using time series.
+  - [Sub entity analysis processor](https://github.com/GEOSYS/impacted-areas-identification-processor) showcasing how to compare vegetation index before and after an event to determine impacted areas.
+   - [Regional level alerts processor](https://github.com/GEOSYS/regional-level-alerts-processor) showcasing how to generate alerts at regional level based on weather and vegetation status.
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 <!-- RESOURCES -->
 ## Resources
 The following links will provide access to more information:
@@ -262,10 +277,10 @@ For any additonal information, please [email us](mailto:sales@earthdailyagro.com
 [contributors-url]: https://github.com/github_username/repo/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=plastic&logo=appveyor
 [forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/impacted-areas-identification/repo.svg?style=plastic&logo=appveyor
+[stars-shield]: https://img.shields.io/github/stars/analytic-processor-template/repo.svg?style=plastic&logo=appveyor
 [stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/GEOSYS/impacted-areas-identification/repo.svg?style=social
-[issues-url]: https://github.com/GEOSYS/impacted-areas-identification/issues
+[issues-shield]: https://img.shields.io/github/issues/GEOSYS/analytic-processor-template/repo.svg?style=social
+[issues-url]: https://github.com/GEOSYS/analytic-processor-template/issues
 [license-shield]: https://img.shields.io/badge/License-MIT-yellow.svg
 [license-url]: https://opensource.org/licenses/MIT
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=social&logo=linkedin
@@ -278,5 +293,5 @@ For any additonal information, please [email us](mailto:sales@earthdailyagro.com
 [language-python-url]: https://pypi.org/
 [GitStars-shield]: https://img.shields.io/github/stars/GEOSYS?style=social
 [GitStars-url]: https://img.shields.io/github/stars/GEOSYS?style=social
-[CITest-shield]: https://img.shields.io/github/workflow/status/GEOSYS/impacted-areas-identification/Continous%20Integration
-[CITest-url]: https://img.shields.io/github/workflow/status/GEOSYS/impacted-areas-identification/Continous%20Integration
+[CITest-shield]: https://img.shields.io/github/workflow/status/GEOSYS/analytic-processor-template/Continous%20Integration
+[CITest-url]: https://img.shields.io/github/workflow/status/GEOSYS/analytic-processor-template/Continous%20Integration
