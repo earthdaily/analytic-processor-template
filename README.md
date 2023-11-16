@@ -143,9 +143,9 @@ To create your repo using this template, perform these steps :
  - `project_name` : Readable name of the project or technology, e.g. Machine Learning based Time Series Classification
  - `project_repo` : the name of the created repository of the project, default to e.g. machine-learning-based-time-series-classification
  - `project_slug` : "slug" of the project, default to e.g. machine_learning_based_time_series_classification
+ - `mode` : ["basic","advanced"] advanced mode include more directory & files dedicated to data scientists (model & data)
  - `author_name` : the name of the authors
  - `description` : "A short description of the project.",
- - `cloud_storage`: ["none","aws", "azure", "both"]
 
 ### Linking your repo to github
 

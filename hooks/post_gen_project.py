@@ -77,6 +77,12 @@ if __name__ == '__main__':
 
     try:
         init_git()
+        # remove not used cloud storage client(s)
+        if '{{cookiecutter.mode}}' == 'basic':
+            remove_dir(os.path.join('src', 'models'))
+            remove_file(os.path.join('src', 'data', '__init__.py'))
+            remove_file(os.path.join('src', 'data', 'dataset.py'))
+
 
     except Exception as e:
         print(e)
