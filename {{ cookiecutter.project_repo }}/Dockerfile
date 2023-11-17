@@ -11,12 +11,12 @@ WORKDIR /app
 COPY ./requirements.txt .
 RUN pip install -r requirements.txt
 RUN pip cache purge; exit 0
-
+RUN apt-get update && apt-get install -y dos2unix
 COPY ./src .
 COPY .env .
 
 COPY docker-entrypoint.sh /usr/local/bin/
-RUN apt-get update && apt-get install -y dos2unix && dos2unix /usr/local/bin/docker-entrypoint.sh
+RUN dos2unix /usr/local/bin/docker-entrypoint.sh
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 ENTRYPOINT ["docker-entrypoint.sh"]

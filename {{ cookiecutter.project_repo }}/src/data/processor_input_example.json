@@ -1,27 +1,17 @@
 {
+  "parametersProfile": "Profile1",
   "parameters": {
-    "start_date": "2022-01-01",
-    "end_date": "2022-12-31",
-    "country_code": "US",
-    "season": {
-      "season_duration": 90,
+      "season_duration": 123,
       "season_start_day": 1,
-      "season_start_month": 3
-    },
-    "historical": true
+      "season_start_month": 1,
+      "historical": true
   },
   "data": [
-    {
-      "id": "1",
-      "crop": "Corn",
-      "year": 2021,
-      "feature": "POLYGON()"
-    },
-    {
-      "id": "2",
-      "crop": "Wheat",
-      "year": 2020,
-      "feature": "POLYGON()"
-    }
+      {
+          "id": "123",
+          "crop": "crop1",
+          "year": 2023,
+          "feature": "POLYGON(())"
+      }
   ]
 }

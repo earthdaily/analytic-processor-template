@@ -1,12 +1,16 @@
-from pydantic import BaseModel, HttpUrl, ValidationError
+from pydantic import BaseModel, HttpUrl
+from typing import Optional
 
 class Metadata(BaseModel):
-    generated_timestamp: str
-    duration_seconds: float
-    datacube_format: str  # "zarr", "netcdf"
+    processId: str
+    processName: str
+    outputFormat: str
 
 class ProcessOutput(BaseModel):
     status: str
-    datacube_url: HttpUrl
-    metadata: Metadata
-    error: str = None
+    outputPath: Optional[HttpUrl]
+    error: Optional[str]
+
+class OutputModel(BaseModel):
+    Metadata: Metadata
+    ProcessOutput: ProcessOutput
