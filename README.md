@@ -226,7 +226,7 @@ Here is the list of examples:
 
 - **Analytic generation**
   - [Sub entity analysis processor](https://github.com/GEOSYS/sub-entity-analysis-processor) showcasing how the impact of an inputs or a practices applied on a sub area of a field using time series.
-  - [Sub entity analysis processor](https://github.com/GEOSYS/impacted-areas-identification-processor) showcasing how to compare vegetation index before and after an event to determine impacted areas.
+  - [Impacted areas processor](https://github.com/GEOSYS/impacted-areas-identification-processor) showcasing how to compare vegetation index before and after an event to determine impacted areas.
    - [Regional level alerts processor](https://github.com/GEOSYS/regional-level-alerts-processor) showcasing how to generate alerts at regional level based on weather and vegetation status.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
