@@ -1,4 +1,6 @@
-mkdocs
-mkdocs-cinder
 cookiecutter
 pytest
+sphinx
+furo
+myst-parser
+sphinx_copybutton

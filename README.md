@@ -59,7 +59,8 @@
 - [Copyrights](#copyrights)
 
 </details>
-
+## Getting started
+<!-- start getting-started -->
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
@@ -234,6 +235,7 @@ If this project has been useful, that it helped you or your business to save pre
 Distributed under the [MIT License](https://github.com/GEOSYS/Studies-and-Analysis/blob/main/LICENSE).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+<!-- end getting-started -->
 
 ## Contact
 

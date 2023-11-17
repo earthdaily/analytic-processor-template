@@ -234,8 +234,29 @@ To set up and run the project using Docker, follow these steps:
     ├───src                <- Source code for use in tis project.
     │   ├───main.py 
     │   ├───api
+    │   │   ├── files
+    │   │   │   └── favicon.svg
     │   │   ├── __init__.py
     │   │   └── api.py
+    │   ├───data
+{%- if cookiecutter.mode == 'advanced' %}
+    │   │   ├── __init__.py 
+    │   │   ├── dataset.py  
+{%- endif %}
+    │   │   └── processor_input_example.json 
+{%- if cookiecutter.mode == 'advanced' %}
+    │   ├───models
+    │   │   ├── __init__.py  
+    │   │   └── model.py    
+{%- endif %}
+    │   ├───data
+    │   │   ├── __init__.py 
+    │   │   ├── input_schema.py   
+    │   │   └── output_schema.py
+    │   ├───utils
+    │   │   ├── __init__.py 
+    │   │   ├── file_utils.py   
+    │   │   └── logging.py
     │   └───{{ cookiecutter.project_slug }}
     │       ├── __init__.py
     │       └── {{ cookiecutter.project_slug }}.py
