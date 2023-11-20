@@ -2,6 +2,7 @@ import json
 import os
 from schemas.input_schema import InputModel
 from schemas.output_schema import OutputModel
+from pydantic import ValidationError
 
 def load_input_data(input_data_path):
     """Load and return the input data from JSON file."""
@@ -19,6 +20,6 @@ def validate_data(data, data_type):
             OutputModel(**data)
         else:
             raise ValueError("Invalid data_type. Must be 'input' or 'output'.")
-    except PydanticValidationError as e:
+    except ValidationError as e:
         print(f"Pydantic validation error: {e}")
         raise
