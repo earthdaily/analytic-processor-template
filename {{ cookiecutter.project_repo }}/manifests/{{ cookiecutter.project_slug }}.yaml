@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ cookiecutter.project_repo }}
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: {{ cookiecutter.project_repo }}
+  template:
+    metadata:
+      labels:
+        app: {{ cookiecutter.project_repo }}
+    spec:
+      containers:
+      - image: regdock01.azurecr.io/{{ cookiecutter.project_repo }}-processor-v2:v1.0.0
+        name: {{ cookiecutter.project_repo }}
+        env: 
+        - name: RUN_MODE_ENV
+          value: "API"  
+        ports:
+        - containerPort: 80
+      imagePullSecrets:
+        - name: acr-secrets
