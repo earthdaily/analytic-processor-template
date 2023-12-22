@@ -1,5 +1,4 @@
-
-FROM continuumio/miniconda3:4.10.3
+FROM continuumio/miniconda3:23.10.0-1
 EXPOSE 80
 
 RUN pip install --upgrade pip==22.0.4
@@ -9,6 +8,7 @@ RUN pip cache purge
 WORKDIR /app
 
 COPY ./requirements.txt .
+
 RUN pip install -r requirements.txt
 RUN pip cache purge; exit 0
 RUN apt-get update && apt-get install -y dos2unix
