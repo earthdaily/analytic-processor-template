@@ -23,3 +23,6 @@ def validate_data(data, data_type):
     except ValidationError as e:
         print(f"Pydantic validation error: {e}")
         raise
+def save_output_file(data):
+    with open('/tmp/processor_output.json', 'w') as file:
+        json.dump(data, file)
