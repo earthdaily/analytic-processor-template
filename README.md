@@ -22,9 +22,9 @@
   </p>
 
   <p>
-    <a href="https://github.com/GEOSYS/GeosysPy/issues">Report Bug</a>
+    <a href="https://github.com/earthdaily/analytic-processor-template/issues">Report Bug</a>
     ·
-    <a href="https://github.com/GEOSYS/GeosysPy/issues">Request Feature</a>
+    <a href="https://github.com/earthdaily/analytic-processor-template/issues">Request Feature</a>
   </p>
 </div>
 
@@ -221,13 +221,13 @@ Based on this template, we also created several examples of processors showcasin
 Here is the list of examples:
 
 - **Imput pipeline**:
-   - [Reflectance datacube processor](https://github.com/GEOSYS/reflectance-datacube-processor) showcasing how to extract data from EarthData Store with premium cloud mask and publish a datacube on cloud storage.
-   - [Analytic datacube processor](https://github.com/GEOSYS/analytics-datacube-processor) showcasing how to extract analytics (mostly vegetation indexes here), package them as a N dimension object that will be persisted on cloud storage.
+   - [Reflectance datacube processor](https://github.com/earthdaily/reflectance-datacube-processor) showcasing how to extract data from EarthData Store with premium cloud mask and publish a datacube on cloud storage.
+   - [Analytic datacube processor](https://github.com/earthdaily/analytics-datacube-processor) showcasing how to extract analytics (mostly vegetation indexes here), package them as a N dimension object that will be persisted on cloud storage.
 
 - **Analytic generation**
-  - [Sub entity analysis processor](https://github.com/GEOSYS/sub-entity-analysis-processor) showcasing how the impact of an inputs or a practices applied on a sub area of a field using time series.
-  - [Impacted areas processor](https://github.com/GEOSYS/impacted-areas-identification-processor) showcasing how to compare vegetation index before and after an event to determine impacted areas.
-   - [Regional level alerts processor](https://github.com/GEOSYS/regional-level-alerts-processor) showcasing how to generate alerts at regional level based on weather and vegetation status.
+  - [Sub entity analysis processor](https://github.com/earthdaily/sub-entity-analysis-processor) showcasing how the impact of an inputs or a practices applied on a sub area of a field using time series.
+  - [Impacted areas processor](https://github.com/earthdaily/impacted-areas-identification-processor) showcasing how to compare vegetation index before and after an event to determine impacted areas.
+   - [Regional level alerts processor](https://github.com/earthdaily/regional-level-alerts-processor) showcasing how to generate alerts at regional level based on weather and vegetation status.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 <!-- RESOURCES -->
