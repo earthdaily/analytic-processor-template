@@ -14,3 +14,10 @@ class ProcessOutput(BaseModel):
 class OutputModel(BaseModel):
     Metadata: Metadata
     ProcessOutput: ProcessOutput
+
+class OutputFile(BaseModel):
+    local_path: str
+    name: str
+    type: Optional[str]
+
+OUTPUT_FILES: list[OutputFile] = []  # List output files HERE
